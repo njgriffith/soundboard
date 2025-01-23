@@ -1,6 +1,13 @@
-const audioPlayer = document.getElementById('audio');
+
 function playSound(event){
-    const soundName = event.parentNode.querySelector('label').innerText;
-    audioPlayer.src = `/sounds/${soundName}.mp3`;
-    audioPlayer.play();
+    const audioPlayer = document.getElementById('audio');
+    var soundName = '';
+    try{
+        soundName = event.parentNode.querySelector('label').innerText;
+        audioPlayer.src = `/sounds/${soundName}.mp3`;
+        audioPlayer.play();
+    }
+    catch (error){
+        console.log(`${soundName} mp3 not found`);
+    }
 }
