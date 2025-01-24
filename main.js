@@ -1,7 +1,7 @@
-function playSound(event, soundName){
+function playSound(event){
     const audioPlayer = document.getElementById('audio');
     try{
-        audioPlayer.src = `/sounds/${soundName}.mp3`;
+        audioPlayer.src = `/sounds/${event.querySelector('label').innerText}.mp3`;
         audioPlayer.play();
         event.classList.toggle('selected');
     }
