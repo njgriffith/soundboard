@@ -1,13 +1,26 @@
 
+// FUCK YOU WE LOVE GLOBAL VARIABLES AND THE OGG FILE FORMAT!!!!!
+const sounds = {
+    1: {
+        "file": "bruh.ogg"
+    }, 
+    2: {
+        "file": "plug.ogg"
+    },
+    3: {
+        "file": "gay.ogg"
+    }
+}
+
 function playSound(event){
     const audioPlayer = document.getElementById('audio');
-    var soundName = '';
+    let soundPath = `/sounds/${sounds[event]["file"]}`;
     try{
-        soundName = event.parentNode.querySelector('label').innerText;
-        audioPlayer.src = `/sounds/${soundName}.mp3`;
+        audioPlayer.src = soundPath;
         audioPlayer.play();
     }
     catch (error){
-        console.log(`${soundName} mp3 not found`);
+        console.error(error);
+        console.error(`"${soundPath}" was not found!`);
     }
 }
