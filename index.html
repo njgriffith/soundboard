@@ -1,28 +1,35 @@
-<html>
-    <head>
-        <title>Fid Soundboard</title>
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        <div class="container">
-            <audio id="audio"></audio>
-            <div>
-                <label>bruh</label>
-                <img src="button.png" onclick="playSound(this)">
-            </div>
-            <div>
-                <label>plug</label>
-                <img src="button.png" onclick="playSound(this)">
-            </div>
-            <div>
-                <label>gay</label>
-                <img src="button.png" onclick="playSound(this)">
-            </div>
-            <div>
-                <label>ethan-crying</label>
-                <img src="button.png" onclick="playSound(this)">
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fid Soundboard</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <audio id="audio"></audio>
+        <div class="sound-item">
+            <label>bruh</label>
+            <img src="button.png" onclick="playSound(this, 'bruh')" alt="Button">
+            <img src="/images/bruh.jpg" onclick="playSound(this, 'bruh')" alt="Sound1">
         </div>
-        <script src="main.js"></script>
-    </body>
+        <div class="sound-item">
+            <label>plug</label>
+            <img src="button.png" onclick="playSound(this, 'plug')" alt="Button">
+            <img src="/images/plug.jpg" onclick="playSound(this, 'plug')" alt="Sound2">
+        </div>
+        <div class="sound-item">
+            <label>gay</label>
+            <img src="button.png" onclick="playSound(this, 'gay')" alt="Button">
+            <img src="/images/gay.jpg" onclick="playSound(this, 'gay')" alt="Sound3">
+        </div>
+        <div class="sound-item">
+            <label>ethan-crying</label>
+            <img src="button.png" onclick="playSound(this, 'ethan-crying')" alt="Button">
+            <img src="/images/ethan-crying.jpg" onclick="playSound(this, 'ethan-crying')" alt="Sound4">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
 </html>
