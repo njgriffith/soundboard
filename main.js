@@ -6,6 +6,9 @@ const sounds = {
     }, 
     2: {
         "file": "plug.ogg"
+    },
+    3: {
+        "file": "gay.ogg"
     }
 }
 
