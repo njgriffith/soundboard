@@ -2,7 +2,7 @@
 
 This is a project to display funny sound effects. Enjoy a collection of humorous sounds at the click of a button!
 
-[jimp-soundboard.netlify.app](jimp-soundboard.netlify.app)
+[jimp-soundboard.netlify.app](https://jimp-soundboard.netlify.app/)
 
 ## Local Setup
 
