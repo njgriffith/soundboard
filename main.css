@@ -17,3 +17,8 @@ img{
     width: 100px;
     cursor: pointer;
 }
+.selected{
+    outline: 1px dotted blue;
+    transform: rotate(360deg);
+    transition-duration: 1s;
+}
