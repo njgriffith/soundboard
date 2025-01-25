@@ -1,32 +1,19 @@
 # Funny Sound Effects Project
 
-This is a project to display funny sound effects. Enjoy a collection of humorous sounds at the click of a button!
+This is how to add a new sound
 
-[jimp-soundboard.netlify.app](https://jimp-soundboard.netlify.app/)
+1. Add a new sound-item
 
-## Local Setup
-
-Follow these steps to set up the project locally and enable live reloading for a smooth development experience.
-
-### Prerequisites
-
-Make sure you have Node.js installed. You can download it from [nodejs.org](https://nodejs.org/).
-
-### Step 1: Install `live-server`
-
-Open your terminal and run the following command to install `live-server` globally:
-
-```sh
-npm install -g live-server
+```html
+<div class="sound-item" onclick="playSound(this)">
+    <label>gay</label>
+    <img src="/images/gay.jpg">
+</div>
 ```
 
-### Step 2: Navigate to Your Project Directory
-Use the terminal to navigate to the directory containing your project files:
-```sh
-cd path/to/your/project
-```
+2. Add your sound's mp3 file to the sounds file
+Make sure the mp3 file name exactly matches the text in your sound's "label" element
 
-### Step 3: Start live-server
-This will start a server and open your default web browser. The page will automatically reload whenever you make changes to your files.
+3. Add your thumbnail image to the "images" folder
 
-If this doesnt work idk just find some way to get it running k thanks
+4. I have hidden a briefcase with $100,000 along the southern coast on Lake Pend Oreille in the Idaho panhandle: 48.127606961459655, -116.34640170429215

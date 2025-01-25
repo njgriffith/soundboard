@@ -16,9 +16,9 @@ document.getElementById('audio').addEventListener('ended', (event) => {
 const soundSearch = document.getElementById('sound-search');
 soundSearch.addEventListener('input', (event) => {
     const soundItems = document.querySelectorAll('.sound-item');
-    const query = soundSearch.value;
+    const query = soundSearch.value.toLowerCase();
     soundItems.forEach(soundItem => {
-        if (soundItem.querySelector('label').innerText.includes(query)){
+        if (soundItem.querySelector('label').innerText.toLowerCase().includes(query)){
             soundItem.style.display = 'flex';
             return;
         }
