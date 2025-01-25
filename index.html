@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <div class="search-container">
+        <input placeholder="search for sounds" id="sound-search">
+    </div>
     <div class="container">
         <audio id="audio"></audio>
         <div class="sound-item" onclick="playSound(this)">
@@ -29,6 +32,11 @@
             <label>incorrect</label>
             <img src="/images/incorrect.jpg">
         </div>
+        <div class="sound-item" onclick="playSound(this)">
+            <label>vine-boom</label>
+            <img src="/images/vine-boom.jpg">
+        </div>
+
     </div>
     <script src="main.js"></script>
 </body>

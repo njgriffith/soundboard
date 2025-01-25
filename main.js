@@ -13,3 +13,15 @@ function playSound(event){
 document.getElementById('audio').addEventListener('ended', (event) => {
     document.querySelector('.selected').classList.toggle('selected');
 });
+const soundSearch = document.getElementById('sound-search');
+soundSearch.addEventListener('input', (event) => {
+    const soundItems = document.querySelectorAll('.sound-item');
+    const query = soundSearch.value;
+    soundItems.forEach(soundItem => {
+        if (soundItem.querySelector('label').innerText.includes(query)){
+            soundItem.style.display = 'flex';
+            return;
+        }
+        soundItem.style.display = 'none';
+    });
+});
